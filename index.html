@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="border2">
+    <div class="border1">
+    <img class="img1" src="https://sneha-webdeveloper.github.io/BMI-Calculator/images/bmi.svg" alt="">
+    <h1>BMI Calculator <br>
+    Body Mass Index</h1>
+    
+</div>
+<img class="img2" src="https://sneha-webdeveloper.github.io/BMI-Calculator/images/bmi.png" alt="">
+<h3 style="color: rgb(189, 174, 160);">Healthy BMI range: 18.5 kg/m2 - <br>25 kg/m2</h3>
+<div class="gender">
+<h2>Gender</h2>
+
+<label for="male">Male</label>
+<input type="radio" id="male" name="gender" value="male">
+
+<label for="female">Female</label>
+<input type="radio" id="female" name="gender" value="female">
+</div>
+<div class="weight">
+<h2>weight</h2>
+<label for="weight"></label>
+<input style="border-radius: 12px;" type="number" id="weight" placeholder="your weight in kgs">
+</div>
+<div class="age">
+<h2>Age</h2>
+<input style="border-radius: 12px;" type="number" id="age" placeholder="your age in Yrs">
+</div>
+<div class="height">
+    <h2>Height</h2>
+    <input style="border-radius: 12px;" type="number" id="height" placeholder="Your height in cms">
+</div>
+<button class="Calculate" id="submit" onclick="calculateBMI()">Calculate BMI</button>
+<div class="result">
+    <p>Your BMI is:</p>
+    <div id="result">00.00</div>
+    <p class="comment"></p>
+</div>
+</div>
+</div>
+</body>
+
+<script src="./script.js">
+
+</script>
+</html>
